@@ -69,6 +69,7 @@
             },
             "development": {
               "browserTarget": "ecart:build:development"
+             
             }
           },
           "defaultConfiguration": "development"
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6aa56f89-4f63-4eb3-b6f4-c550ac97d258"
   }
 }

@@ -1,0 +1,47 @@
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+        <div class="items">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/128/7078/7078329.png">
+                <h6>All products</h6>
+            </a>
+        </div>    
+        <div class="items">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/128/7078/7078329.png">
+                <h6>Electronics</h6>
+            </a>
+        </div>    
+        <div class="items">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/128/7078/7078329.png">
+                <h6>Fashion</h6>
+            </a>
+        </div>    
+        <div class="items">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/128/7078/7078329.png">
+                <h6>Jewellery</h6>
+            </a> 
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let items of productList">
+            <div class="card col-md-3">
+                <img src="{{items.image}}">
+                <h5 class="itemdata">{{items.title}}</h5>
+                <p class="itemdata">{{items.description}}</p>
+                <p><strong>Price:</strong>${{items.price}}</p>
+                <p>{{items.category}}</p>
+                
+                <button class="btn btn-primary"
+                (click)="addtoCart(items)">
+                    Add to cart
+                </button>
+            </div>
+        </ng-container> 
+    </div>
+</div>
